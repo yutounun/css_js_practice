@@ -1,0 +1,75 @@
+<html>
+    <body>
+        <header>
+            This is a header
+        </header>
+        <aside class="sidebar">
+            This is a sidebar
+        </aside>
+        <div class="article1">
+            <img src="./download.png" alt="">
+            <span>This is an article1</span>
+        </div>
+        <div class="article2">
+            <img src="./download.png" alt="">
+            <span>This is an article2</span>
+        </div>
+        <div class="article3">
+            <img src="./download.png" alt="">
+            <span>This is an article3</span>
+        </div>
+        <div class="article4">
+            <img src="./download.png" alt="">
+            <span>This is an article4</span>
+        </div>
+        <footer>
+            This is footer
+        </footer>
+    </body>
+</html>
+<style>
+body {
+    display: grid;
+    grid-template-columns: 200px 700px 1fr;
+    grid-template-rows: 200px 300px 300px 200px;
+}
+header {
+    grid-column: 1/4;
+    grid-row: 1;
+    background-color: blue;
+}
+.sidebar {
+    grid-column: 1;
+    grid-row: 2/4;
+    background-color: aqua;
+}
+.article1 {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: skyblue;
+    border: white solid 1px;
+}
+.article2 {
+    grid-column: 3;
+    grid-row: 2;
+    background-color: skyblue;
+    border: white solid 1px
+}
+.article3 {
+    grid-column: 2;
+    grid-row: 3;
+    background-color: skyblue;
+    border: white solid 1px
+}
+.article4 {
+    grid-column: 3;
+    grid-row: 3;
+    background-color: skyblue;
+    border: white solid 1px
+}
+footer {
+    grid-column: 1/4;
+    grid-row: 4;
+    background-color: yellow;
+}
+</style>

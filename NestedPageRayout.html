@@ -1,0 +1,78 @@
+<html>
+    <body>
+        <header>
+            This is a header
+        </header>
+        <aside class="sidebar">
+            This is a sidebar
+        </aside>
+        <article>
+            <div class="article1">
+                <img src="./download.png" alt="">
+                <span>This is an article1</span>
+            </div>
+            <div class="article2">
+                <img src="./download.png" alt="">
+                <span>This is an article2</span>
+            </div>
+            <div class="article3">
+                <img src="./download.png" alt="">
+                <span>This is an article3</span>
+            </div>
+            <div class="article4">
+                <img src="./download.png" alt="">
+                <span>This is an article4</span>
+            </div>
+        </article>
+        <footer>
+            This is footer
+        </footer>
+    </body>
+</html>
+<style>
+body {
+    display: grid;
+    grid-template-columns: 200px 700px 1fr;
+    grid-template-rows: 200px 300px 300px 200px;
+    grid-template-areas: 
+    "header  header     header"
+    "sidebar article article"
+    "sidebar article article"
+    "footer  footer     footer";
+}
+header {
+    grid-area: header;
+    background-color: blue;
+}
+.sidebar {
+    grid-area: sidebar;
+    background-color: aqua;
+}
+article {
+    grid-area: article;
+    background-color: skyblue;
+    border: white solid 1px;
+    display: grid;
+    grid-template-columns: 700px 1fr;
+    grid-template-rows: 300px 300px;
+    grid-template-areas:
+    "article1 article2"
+    "article3 article4";
+}
+.article1 {
+    grid-area: article1;
+}
+.article2 {
+    grid-area: article2;
+}
+.article3 {
+    grid-area: article3;
+}
+.article4 {
+    grid-area: article4;
+}
+footer {
+    grid-area: footer;
+    background-color: yellow;
+}
+</style>
